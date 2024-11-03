@@ -1,0 +1,165 @@
+.log-cont {
+    width: 400px;
+    height: 550px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 150px;
+    left: 39%;
+    z-index: 150;
+}
+
+.close {
+    color: #000000;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 32px;
+    font-weight: bold;
+    z-index: 5;
+    color: rgb(21, 21, 21);
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
+.form-card {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    backdrop-filter: blur(8px);
+    background: transparent;
+    border: 2px solid #94bec2;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: transform 1.5s;
+    z-index: 150;
+}
+
+.form-card form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.front {
+    z-index: 150;
+}
+
+.back {
+    transform: rotatey(-180deg);
+}
+
+.log-cont.flip .front {
+    transform: rotatey(180deg);
+}
+
+.log-cont.flip .back {
+    transform: rotate(0deg);
+}
+
+.logh1 {
+    margin-top: 50px;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.log {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #e6e2e2;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.inputbox {
+    position: relative;
+    margin: 20px 0;
+    width: 300px;
+    border-bottom: 2px solid#fff;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+input:focus~label {
+    top: -5px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 35px 0 5px;
+    color: #000;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 20px;
+    top: 12px;
+}
+
+.forget {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 15px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.register {
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 10px 0 15px 50px;
+}
+
+.switch {
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+}
+
+.register p button:hover {
+    text-decoration: underline;
+}
